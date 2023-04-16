@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Form from "./Components/Form";
+import List from "./Components/List";
 
 export interface item {
   itemHeading: string;
@@ -26,6 +27,7 @@ const App = () => {
     <div className="App">
       <h1>TODO</h1>
       <Form listItems={listItems} setListItems={setListItems} />
+      <List listItems={listItems} setListItems={setListItems} />
     </div>
   );
 };
